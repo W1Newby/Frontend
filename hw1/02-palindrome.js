@@ -6,7 +6,17 @@ const input = document.getElementById("number-input");
 const result = document.getElementById("result");
 
 input.addEventListener("input", () => {
-  result.textContent = `You typed: ${input.value}`;
-});
+  const original = input.value;
 
-console.log("JS file loaded ✅");
+  const value_array = original.split("");
+  const reverse_array = value_array.reverse();
+  const final_value = reverse_array.join("");
+
+  if (original === final_value) {
+    result.textContent = `Yes. This is a palindrome!`;
+    result.className = "text-success";
+  } else {
+    result.textContent = `No. Try again.`;
+    result.className = "text-danger";
+  }
+});
