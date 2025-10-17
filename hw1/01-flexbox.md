@@ -2,6 +2,48 @@
 
 1. justify-content: flex-end;
 2. justify-content: center;
-3.
-4.
-5. ...
+3. justify-content: space-around;
+4. justify-content: space-between;
+5. align-items: flex-end;
+6. (2 lines)
+   a. align-items: center;
+   b. justify-content: center;
+7. (2 lines)
+   a. justify-content: space-around;
+   b. align-items: end;
+8. flex-direction: row-reverse;
+9. flex-direction: column;
+10. (2 lines)
+    a. flex-direction: row-reverse;
+    b. justify-content: start;
+11. (2 lines)
+    a. flex-direction: column;
+    b. justify-content: end;
+12. (2 lines)
+    a. flex-direction: column-reverse;
+    b. justify-content: space-between;
+13. (3 lines)
+    a. justify-content: center;
+    b. align-items: end;
+    c. flex-direction: row-reverse;
+14. order: 1;
+15. order: -3;
+16. align-self: flex-end;
+17. (2 lines)
+    a. order: 1;
+    b. align-self: end;
+18. flex-wrap: wrap;
+19. (2 lines)
+    a. flex-wrap: wrap;
+    b. flex-direction: column;
+20. flex-flow: column wrap;
+21. align-content: flex-start;
+22. align-content: end;
+23. (2 lines)
+    a. flex-direction: column-reverse;
+    b. align-content: center;
+24. (4 lines)
+    a. flex-direction: column-reverse;
+    b. flex-wrap: wrap-reverse;
+    c. align-content: space-between;
+    d. justify-content: center;
