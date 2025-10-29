@@ -1,4 +1,4 @@
-// Add your code here
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("registrationForm");
   const modalBody = document.getElementById("modalBody");
