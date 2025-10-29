@@ -3,18 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>05 - Form</title>
+    <title>Exercise 05 - Form</title>
+
+    <!-- Bootstrap CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    />
     <script defer src="05-form.js"></script>
   </head>
-  <body>
-    <main>
-      <form>
-        <h1>Exercise 05 - Form</h1>
+
+  <body class="bg-dark d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow" style="max-width: 500px; width: 100%">
+      <h3 class="text-center mb-4">Exercise 05 - Form</h3>
+
+      <form id="registrationForm">
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name:</label>
+          <input type="text" id="fullName" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label for="status" class="form-label">Registration Status:</label>
+          <select id="status" class="form-select">
+            <option value="">Choose an Option</option>
+            <option>Registered</option>
+            <option>Waitlisted</option>
+            <option>Not Registered</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label"
+            >Have you taken any of the following courses?</label
+          ><br />
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="course1"
+              value="Programming Languages"
+            />
+            <label class="form-check-label" for="course1"
+              >Programming Languages</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="course2"
+              value="Operating Systems"
+            />
+            <label class="form-check-label" for="course2"
+              >Operating Systems</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="course3"
+              value="Full Stack Web Development"
+            />
+            <label class="form-check-label" for="course3"
+              >Full Stack Web Development</label
+            >
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="comments" class="form-label">Anything else?</label>
+          <textarea id="comments" class="form-control" rows="3"></textarea>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <button type="submit" class="btn btn-primary w-50 me-2">
+            Submit
+          </button>
+          <button type="reset" class="btn btn-secondary w-50">Reset</button>
+        </div>
       </form>
-    </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="resultModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Form Submission</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalBody"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle (includes Popper for modal) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
