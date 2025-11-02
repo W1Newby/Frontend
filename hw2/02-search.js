@@ -1,5 +1,3 @@
-// Add your code here
-
 //userInput.addEventListener('click', handleClick);
 //pulls from html page
 const input = document.getElementById("userInput");
