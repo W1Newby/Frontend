@@ -1,4 +1,4 @@
-// Add your code here
+
 // grabbing stuff from the html page
 const input = document.getElementById("userInput");
 const textContainer = document.getElementById("textContainer");
