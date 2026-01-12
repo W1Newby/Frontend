@@ -1,5 +1,7 @@
 ## Exercise 02 - CSS Grid
 
+## William Newby
+
 1. grid-column-start: 3;
 2. grid-column-start: 5;
 3. grid-column-end: 4;
